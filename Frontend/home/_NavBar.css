@@ -1,0 +1,74 @@
+/* Header styles & Nav */
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    background: rgb(90, 88, 88);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    z-index: 999;
+    position: sticky;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+#header .logo {
+    width: 15%;
+    height: 15%;
+}
+
+#navbar {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+#navbar li {
+    margin-right: 20px;
+    padding: 0 20px;
+    position: relative;
+}
+
+#navbar li a {
+    color: #fff;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+    text-decoration: transparent;
+}
+
+#navbar li a:hover,
+#navbar li a:active {
+    background-color: #ccc6c6;
+    border: none;
+    border-radius: 50px;
+}
+
+#navbar button {
+    padding: 8px;
+    border: transparent;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+#navbar-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+#navbar-toggle .fa-bars {
+    font-size: 20px;
+    display: inline-block;
+}
+
+#navbar-toggle .fa-times {
+    font-size: 20px;
+    display: none;
+}
+.fa-bars:before, .fa-navicon:before{
+    color: white;
+}

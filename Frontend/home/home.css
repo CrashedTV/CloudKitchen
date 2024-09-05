@@ -1,0 +1,458 @@
+/* Global Style */
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Spartan', sans-serif;
+}
+
+body {
+    width: 100%;
+    font-family: 'Spartan', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 50px;
+    line-height: 64px;
+    color: #222;
+    margin: 20px 0;
+    text-align: center;
+}
+
+h2 {
+    font-size: 46px;
+    line-height: 54px;
+    color: #222;
+}
+
+h3 {
+    font-size: 20px;
+    color: #222;
+}
+
+h6 {
+    font-weight: 700;
+    font-size: 12px;
+}
+
+p {
+    font-size: 16px;
+    color: #465b52;
+    margin: 15px 0 20px 0;
+}
+
+.section-p1 {
+    margin: 40px 80px;
+}
+
+.section-m1 {
+    margin: 40px 0;
+}
+
+
+/* Hero Section styles */
+#hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    text-align: center;
+    background-color: #333;
+}
+
+.slider {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.slide:nth-child(1) {
+    background-image: url('./img/f3.jpg');
+}
+
+.slide:nth-child(2) {
+    background-image: url('./img/category/momo.jpg');
+}
+
+.slide:nth-child(3) {
+    background-image: url('./img/category/nonveg.jpg');
+}
+
+.slide:nth-child(4) {
+    background-image: url('./img/product/Dhido.jpg');
+}
+
+.slide:nth-child(5) {
+    background-image: url('./img/category/veg.jpg');
+}
+
+/* Premium Text Styling */
+#hero h4 {
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: #f1c40f; /* Gold color for a premium feel */
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+    z-index: 2;
+}
+
+#hero h2 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    color: #ecf0f1; /* Light color for contrast */
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+    z-index: 2;
+}
+
+#hero h1 {
+    font-size: 80px;
+    font-weight: 900;
+    line-height: 1.1;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+    color: #ffffff;
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.7);
+    z-index: 2;
+}
+
+#hero p {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    color: #dcdcdc; /* Slightly off-white for readability */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    z-index: 2;
+}
+
+#hero a {
+    position: relative;
+    z-index: 2;
+}
+
+#hero button {
+    padding: 12px 30px;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+#hero button:hover {
+    background-color: #c0392b;
+    transform: scale(1.05);
+}
+
+
+/* Menu Section Styles  */
+#our-menu {
+    padding: 30px;
+    max-width: 1200px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+#our-menu h2{
+    margin-bottom: 30px;
+    color: #000;
+    border: 2px solid rgb(244, 244, 244);
+    display: inline-block;
+    background-color:#fff;
+    margin-top: 20px;
+    padding: 15px;
+}
+
+.menu-categories {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.menu-categories button {
+    background-color: #fff;
+    border: 1px solid #000;
+    margin: 0 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.menu-categories button:hover, .menu-categories button.active {
+    background-color: #000;
+    color: #fff;
+}
+
+.menu-section {
+    display: none;
+    width: 87%;
+   
+    background-color:  rgb(90, 88, 88);
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.menu-section.active {
+    display: block;
+    
+}
+
+.menu-section:hover {
+    transform: scale(1.05);
+    box-shadow: 10px 15px 10px rgb(112, 107, 107);
+    transition: 0.4s ease-in-out;
+}
+
+.menu-section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.menu-item {
+    margin-bottom: 20px;
+}
+
+.menu-item h3 {
+    margin: 0;
+    font-size: 20px;
+    color: #fff;
+}
+
+.menu-item p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #bbb;
+}
+
+.order-button {
+    display: block;
+    margin: 20px auto 0;
+    padding: 10px 20px;
+    background-color: #ff9800;
+    color: #fff;
+    text-align: center;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+}
+.order-button a {
+    text-decoration: none;
+}
+.order-button:hover {
+    background-color: #2ac516;
+}
+
+/* Banner Section  */
+#page-header {
+    background-image: url('./img/menu/spices.jpg');
+    width: 87%;
+    height: 40vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 14px;
+    margin-top: 6em;
+}
+
+#page-header h2, #page-header p {
+    color: white;
+}
+
+
+/* Why choose us  */
+.title {
+    margin-bottom: 30px;
+    color: rgb(255, 253, 253);
+    border: 2px solid rgb(244, 244, 244);
+    display: inline-block;
+    background-color: black;
+    margin-top: 60px;
+    padding: 15px;
+}
+
+#feature {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    background-color: rgba(221, 219, 219, 0.774);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    width: 87%;
+    padding: 50px;
+}
+
+#feature .fe-box {
+    width: 100%;
+    max-width: 250px;
+    text-align: center;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+
+}
+
+#feature .fe-box-inner {
+    padding: 20px;
+    background-color: #070707;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#feature .fe-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+}
+
+#feature .fe-box h6 {
+    margin: 15px 0 10px;
+    font-size: 0.8em;
+    color: #494a4a;
+    background-color: #000000;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+
+#feature .fe-box:hover .fe-box-inner {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+/* FeedBack Section */
+#feedback {
+    background: url('../D-MAGG\ Kitchen/img/background/hero4.jpg') no-repeat center center;
+    background-size: cover; /* Ensure the background image covers the entire section */
+    padding: 80px 0;
+    width: 87%;
+    position: relative;
+    color: #fff; /* Optional: Set text color to white for better readability */
+    text-align: center; /* Center-align text */
+}
+
+#feedback h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+#feedback p {
+    font-size: 18px;
+    margin-bottom: 40px;
+    color: #fff; /* Light text for better readability on the background image */
+}
+
+.feedback-container {
+    display: flex;
+    justify-content: center; /* Center the form container */
+    align-items: center; /* Center the form container */
+}
+
+.feedback-container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center-align form elements */
+    background: rgba(211, 211, 211, 0.9); /* Grey background with opacity */
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    width: 100%;
+}
+
+.feedback-container label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    align-self: flex-start; 
+    color: #000;
+}
+
+.feedback-container input,
+.feedback-container textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.feedback-container button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.feedback-container button:hover {
+    background-color: #555;
+}
+
+.error-message {
+    color: red;
+    font-size: 12px;
+}
+
+.success-message {
+    color: green;
+    font-size: 14px;
+}
+
+/* Responsive styles for #feedback section */
+@media screen and (max-width: 768px) {
+    #feedback {
+        padding: 40px 0;
+    }
+
+    .feedback-container {
+        padding: 10px;
+    }
+    
+    .feedback-container form {
+        max-width: 100%;
+        width: 100%;
+    }
+}

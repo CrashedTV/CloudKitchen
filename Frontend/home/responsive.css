@@ -1,0 +1,161 @@
+/* Responsive styles */
+@media screen and (max-width: 1068px) {
+    #navbar {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        padding: 10px;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+    }
+
+    #navbar.active {
+        margin-top: 65px;
+        display: flex;
+    }
+
+    #navbar li {
+        margin-right: 0;
+        margin-bottom: 10px;
+        width: 100%;
+        text-align: center;
+    }
+
+    #navbar-toggle {
+        display: block;
+    }
+
+    /* Hero Section Responsive */
+    #hero {
+        padding: 0 20px;
+        background-position: center;
+        height: 60vh;
+    }
+
+    #hero h1 {
+        font-size: 36px;
+    }
+
+    #hero h2 {
+        font-size: 28px;
+    }
+
+    #hero p {
+        font-size: 14px;
+    }
+
+    #hero button {
+        padding: 5px 15px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #hero {
+        padding: 0 10px;
+        height: 50vh;
+        align-items: center;
+        text-align: center;
+    }
+
+    #hero h1 {
+        font-size: 28px;
+    }
+
+    #hero h2 {
+        font-size: 22px;
+    }
+
+    #hero p {
+        font-size: 12px;
+    }
+
+    #hero button {
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #hero {
+        height: 40vh;
+    }
+
+    #hero h1 {
+        font-size: 24px;
+    }
+
+    #hero h2 {
+        font-size: 18px;
+    }
+
+    #hero p {
+        font-size: 10px;
+    }
+
+    #hero button {
+        padding: 3px 8px;
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 1068px) {
+    #page-header {
+        width: 95%;
+        height: 35vh;
+        padding: 10px;
+        margin-top: 5em;
+    }
+
+    #page-header h2 {
+        font-size: 32px;
+    }
+
+    #page-header p {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #page-header {
+        width: 100%;
+        height: 30vh;
+        padding: 8px;
+        margin-top: 4em;
+    }
+
+    #page-header h2 {
+        font-size: 28px;
+    }
+
+    #page-header p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    #page-header {
+        width: 100%;
+        height: 25vh;
+        padding: 6px;
+        margin-top: 3em;
+    }
+
+    #page-header h2 {
+        font-size: 24px;
+    }
+
+    #page-header p {
+        font-size: 12px;
+    }
+}
+
+/* Why choose us  */
+@media (max-width: 768px) {
+    #feature {
+        flex-direction: column;
+        gap: 20px;
+    }
+}

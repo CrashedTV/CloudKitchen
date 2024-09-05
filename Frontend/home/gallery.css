@@ -1,0 +1,36 @@
+.photo-gallery {
+    max-width: 1200px;
+    text-align: center;
+    margin-top: 80px;
+    background-color: rgba(221, 219, 219, 0.774);
+}
+
+.photo-gallery h2 {
+    margin-bottom: 40px;
+    color: rgb(255, 253, 253);
+    border: 2px solid rgb(244, 244, 244);
+    display: inline-block;
+    background-color: black;
+    margin-top: 20px;
+    padding: 15px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding-bottom: 200px;
+}
+
+.gallery img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgb(67, 77, 107);
+}
